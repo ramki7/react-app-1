@@ -1,6 +1,11 @@
 pipeline {
-    agent any
-
+	agent any{
+		node{
+		label:react-node
+		}
+	
+	}
+       
     stages {
         stage('Build') {
             steps {
